@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+  $color-primary: #6E44FF;
+  $color-dark-1: #323232;
+  $color-dark-2: #000000;
+  $color-light: #FFFFFF;
+  $font-size-1: 1rem;
+  $font-size-2: 1.2rem;
+  $font-size-3: 1.8rem;
+  $shadow-1: rgb(0 0 0 / 35%) Opx 8px 24px;
+  $shadow-2: rgba(100, 100, 111, 0.2) Opx 7px 29px Opx;
+  $border-radius-1: .25rem;
+  $border-radius-2: .5rem;
+  $font-family: 'Poppins', sans-serif;
+  $animation-1: 200ms;
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: $color-dark-2;
+  font-family: $font-family;
+  font-size: $font-size-1;
+  color: $color-light;
+}

@@ -1,0 +1,19 @@
+<div class="side-bar">
+  <div><i class="uil uil-ellipsis-h"></i></div>
+  <ul class="side-bar__list list-one">
+    <li *ngFor="let item of linkMenu">
+      <div class="list-wrapper-item">
+        <i class="uil {{item.icon}}"></i>
+        <span class="side-bar__list list-label">{{item.name}}</span>
+      </div>
+    </li>
+  </ul>
+  <div class="side-bar__separator"></div>
+  <ul class="side-bar__list list-two">
+    <li>
+      <div class="list-wrapper-item">
+      </div>
+    </li>
+  </ul>
+  <div class="side-bar__separator line-separator"></div>
+</div>
