@@ -1,5 +1,9 @@
 # Audito
 
+<a title="LanguagesUsed" target="_blank" href="#">
+<img align="center" alt="Icon of HTML5" src="https://skillicons.dev/icons?i=angular,ts,rxjs,scss&theme=light">
+</a>
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.8.
 
 ## Development server

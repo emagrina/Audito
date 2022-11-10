@@ -1,4 +1,5 @@
 @import "src/styles";
+
 .side-bar {
   width: 15.5rem;
   height: 100vh;
@@ -6,6 +7,7 @@
   top: 0;
   left: 0;
   padding: .5rem 1rem;
+  background-color: $color-light-1;
 }
 
 .side-bar__list {
@@ -38,7 +40,7 @@
 }
 
 .side-bar__separator.line-separator {
-  border-bottom: solid 1px $color-dark-1;
+  border-bottom: solid 1px $color-dark-2;
 }
 
 .side-bar__list.list-three .list-wrapper-item {
@@ -47,4 +49,9 @@
 
 .side-bar__list li {
   cursor: pointer;
+}
+
+.img-side-bar {
+  height: 2em;
+  margin: 1rem .5rem;
 }

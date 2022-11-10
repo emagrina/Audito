@@ -1,8 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
   $color-primary: #6E44FF;
-  $color-dark-1: #323232;
+  $color-primary-transparent: rgba(110, 68, 255, 0.04);
+  $color-dark-1: rgba(50, 50, 50, 0.19);
   $color-dark-2: #000000;
-  $color-light: #FFFFFF;
+  $color-light-1: #FFFFFF;
+  $color-light-2: #F9FAFE;
   $font-size-1: 1rem;
   $font-size-2: 1.2rem;
   $font-size-3: 1.8rem;
@@ -16,8 +18,22 @@
 html, body {
   margin: 0;
   padding: 0;
-  background-color: $color-dark-2;
+  background-color: $color-light-2;
   font-family: $font-family;
   font-size: $font-size-1;
-  color: $color-light;
+  color: $color-dark-2;
+}
+
+body::-webkit-scrollbar {
+  width: 0.7em;
+}
+
+body::-webkit-scrollbar-track {
+  background: $color-light-2;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $color-dark-1;
+  border-radius: 20px;
+  border: 0.1em solid $color-light-2;
 }
