@@ -37,3 +37,17 @@ body::-webkit-scrollbar-thumb {
   border-radius: 20px;
   border: 0.1em solid $color-light-2;
 }
+
+input,button {
+  font-family: $font-family;
+}
+
+button:disabled {
+  opacity: .5;
+  transition: $animation-1;
+  cursor: not-allowed !important;
+}
+
+button:valid {
+  transition: $animation-1;
+}
