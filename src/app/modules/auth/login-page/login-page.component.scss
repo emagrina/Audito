@@ -1,0 +1,117 @@
+@import "src/styles";
+
+.login-auth-page {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: $color-light-2;
+  color: $color-dark-2;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+.login-auth-page .login-auth-wrapper {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-auth-page .login-social-zone {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+  width: 100%;
+}
+
+.login-auth-page .social-btn {
+  padding: .5rem 2rem;
+  width: 100%;
+  font-size: $font-size-1;
+  border-radius: $border-radius-1;
+  box-shadow: $shadow-1;
+  border: solid 1px $color-light-1;
+  background-color: $color-light-1;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-auth-page .login-social-zone .social-btn.btn-fb {
+  background-color: rgb(58, 97, 179);
+  color: $color-light-1;
+}
+
+.login-auth-page .login-social-zone .social-btn.btn-apple {
+  background-color: #1a1a1a;
+  color: $color-light-1;
+}
+
+.login-auth-page .separator {
+  width: 100%;
+  margin: 2rem 0;
+  border-bottom: solid 1px $color-dark-1;
+  opacity: .2;
+}
+
+.login-auth-page .login-auth-form {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.login-auth-page .login-auth-form .form-group {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.login-auth-page .login-auth-form .form-group input {
+  border: solid 1px #e7e7e7;
+  border-radius: $border-radius-1;
+  height: 30px;
+  padding: .25rem .5rem;
+  font-size: 90%;
+}
+
+.login-auth-page .login-auth-form label {
+  padding-bottom: .35rem;
+  font-weight: 600;
+  display: inline-block;
+  margin: 0;
+}
+
+.login-auth-page .login-auth-form .form-steps {
+  padding: .5rem 0;
+}
+
+.login-auth-page .login-auth-form .form-steps .link {
+  color: $color-dark-2;
+  font-size: 85%;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.login-auth-page .login-auth-form .form-steps .link:hover {
+  color: $color-primary;
+}
+
+.login-auth-page .login-auth-form .form-action .login {
+  color: $color-light-1;
+  margin: 1rem 0;
+  background-color: $color-primary;
+  border-radius: $border-radius-1;
+
+}
+
+input.ng-invalid.ng-touched {
+  border: solid 2px tomato !important;
+}
+
+.errorSession {
+  color: tomato;
+}
