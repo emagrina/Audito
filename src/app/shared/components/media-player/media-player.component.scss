@@ -102,7 +102,7 @@
   gap: .5rem
 }
 
-.media-player--wrapper .player-controls-inside .buttons-media .btn {
+.media-player--wrapper .player-controls-inside .buttons-media .btn:nth-child(odd) {
   background-color: transparent;
   border: 0;
   color: $color-dark-1;
@@ -112,6 +112,14 @@
 
 .media-player--wrapper .player-controls-inside .buttons-media .play {
   font-size: 2.35rem;
+}
+.play.btn {
+  background-color: transparent;
+  border-radius: 100px;
+  border: 0;
+  color: $color-dark-2;
+  cursor: pointer;
+  opacity: .5;
 }
 
 .media-player--wrapper .player-controls-inside .media-linetime {
@@ -127,7 +135,7 @@
 
 .media-player--wrapper .player-controls-inside .media-linetime .time-progress {
   background-color: $color-dark-1;
-  height: 2px;
+  height: 3px;
   width: 100%;
   left: 0;
   position: absolute;
@@ -137,7 +145,7 @@
 .media-player--wrapper .player-controls-inside .media-linetime .time-progress-live {
   background-color: $color-primary;
   width: 0;
-  height: 2px;
+  height: 3px;
   transition: all ease $animation-1;
   position: absolute;
 }
@@ -154,3 +162,4 @@
   color: $color-dark-2;
   font-size: $font-size-2;
 }
+

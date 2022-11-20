@@ -1,6 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {TracksModel} from "@core/models/tracks.model";
 import {MultimediaService} from "@shared/services/multimedia.service";
+import {Subscription} from "rxjs";
 
 @Component({
   selector: 'app-card-player',
@@ -17,6 +18,6 @@ export class CardPlayerComponent implements OnInit {
   }
 
   sendPlay(track: TracksModel) : void {
-    this.multimediaService.callback.emit(track);
+    this.multimediaService.trackIngo$.next(track)
   }
 }

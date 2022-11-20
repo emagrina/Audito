@@ -5,7 +5,7 @@
   height: 5rem;
   border-radius: $border-radius-2;
   display: flex;
-  cursor: pointer;
+  cursor: default;
   transition: all ease $animation-1;
   justify-content: space-between;
 }
@@ -52,6 +52,7 @@
   background-color: $color-primary;
   width: 45px;
   height: 45px;
+  cursor: pointer;
 }
 
 .card-player.player-big {
